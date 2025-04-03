@@ -1,2 +1,0 @@
-#  studying JSON Web Tokens
- 

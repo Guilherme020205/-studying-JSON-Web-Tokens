@@ -12,49 +12,8 @@ Este é um backend RESTful desenvolvido com Node.js, Express e Sequelize para au
 - Bcrypt.js (criptografia de senhas)
 - Dotenv (variáveis de ambiente)
 
----
 
-## Configuração e Execução
-
-
-### Instalar dependências
-```sh
- npm install
-```
-
-###  Configurar o banco de dados
-Crie um banco de dados chamado **testeJWT** no PostgreSQL e configure as credenciais no arquivo `.env`.
-
-### Criar arquivo `.env`
-Crie um arquivo `.env` na raiz do projeto e adicione as seguintes variáveis:
-
-```
-PORT=3000
-DB_NAME=testeJWT
-DB_USER=postgres
-DB_PASSWORD=admin
-DB_HOST=localhost
-DB_PORT=5432
-JWT_SECRET=seuSegredoSuperSeguro
-```
-
-### Rodar as migrações para criar tabelas no banco
-```sh
- npx sequelize-cli db:migrate
-```
-
-### Iniciar o servidor
-```sh
- npm run dev  # Usando nodemon
-# ou
- node server.js  # Execução manual
-```
-
----
-
-## Endpoints
-
-### 🔹 Registro de Usuário
+### Registro de Usuário
 **POST** `/register`
 #### Request Body:
 ```json
